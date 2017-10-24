@@ -1,0 +1,123 @@
+$padding-extra-small-vertical: 2px;
+$padding-extra-small-horizontal: 2px;
+$padding-small-vertical: 3px;
+$padding-small-horizontal: 3px;
+$padding-base-vertical: 6px;
+$padding-base-horizontal: 6px;
+$padding-large-vertical: 10px;
+$padding-large-horizontal: 10px;
+$padding-extra-large-vertical: 12px;
+$padding-extra-large-horizontal: 12px;
+
+$error: Red;
+$warning: Orange;
+$info: Green;
+
+.tokenfield-input {
+
+    position: relative;
+
+    &.focus {
+        .form-control {
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &.disabled {
+        .form-control {
+            background-color: #eeeeee;
+
+            &:hover {
+                cursor: not-allowed;
+            }
+
+            .token-wrapper {
+                pointer-events: none;
+            }
+        }
+    }
+
+    .duplicate-message {
+        margin-top: $padding-base-vertical;
+
+        .fa {
+            color: $error;
+        }
+    }
+
+    .form-control {
+        padding: 0;
+        height: auto !important;
+        min-height: 34px;
+    }
+
+    .token-container {
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        padding: $padding-extra-small-vertical $padding-extra-small-horizontal;
+
+        .token-input {
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin: 0;
+            padding: 0;
+            padding-left: $padding-small-horizontal;
+            flex-basis: 0;
+            min-width: 100px;
+            outline: 0;
+            border: none;
+            height: 26px;
+        }
+    }
+
+    .selected-token {
+        border-color: #66afe9;
+        outline: 0;
+    }
+}
+
+.token {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    white-space: nowrap;
+    padding: $padding-extra-small-vertical $padding-extra-small-horizontal;
+    margin: $padding-extra-small-vertical $padding-extra-small-horizontal;
+
+    .token-label {
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-width: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 20px;
+        padding-right: $padding-base-horizontal;
+    }
+
+    .token-actions {
+        display: inline;
+        cursor: pointer;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+
+        .remove-action {
+            color: darkgray;
+            &:hover {
+                color: darken(darkgray, 25);
+            }
+        }
+    }
+}
