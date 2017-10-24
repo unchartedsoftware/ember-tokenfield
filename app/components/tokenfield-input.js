@@ -35,6 +35,7 @@ export default Ember.Component.extend({
     isFocused: null,
     hasTokens: Ember.computed.notEmpty('tokens'),
     selectedTokenIndex: null,
+    showDuplicateMessage: false,
 
     // Lifecycle
     init() {
