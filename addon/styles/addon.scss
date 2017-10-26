@@ -63,6 +63,7 @@ $info: Green;
         overflow-x: hidden;
         display: flex;
         flex-wrap: wrap;
+        border: 1px solid #ededed;
         padding: $padding-extra-small-vertical $padding-extra-small-horizontal;
 
         .token-input {
@@ -73,6 +74,8 @@ $info: Green;
             padding-left: $padding-small-horizontal;
             flex-basis: 0;
             min-width: 100px;
+            outline: 0;
+            border: none;
             height: 26px;
         }
     }
