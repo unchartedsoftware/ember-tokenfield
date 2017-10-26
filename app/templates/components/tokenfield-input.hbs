@@ -20,7 +20,9 @@
         value=inputValue}}
     </div>
 </div>
-<p class="duplicate-message {{if showDuplicateMessage '' 'hidden'}}">
-    <span class="fa fa-exclamation-circle"></span>
-    Duplicate values are not allowed
-</p>
+{{#if showDuplicateMessage}}
+    <p class="duplicate-message">
+        <span class="fa fa-exclamation-circle"></span>
+        Duplicate values are not allowed
+    </p>
+{{/if}}
