@@ -1,0 +1,16 @@
+<span>
+    Enter Tokens:
+    {{tokenfield-input
+        tokens=tokens
+        allowDuplicates=isAllowDuplicates
+        placeholder="Enter terms..."
+    }}
+</span>
+
+<div>
+    <p></p>
+    <span>The tokens entered are:</span>
+    {{#each tokens as |t|}}
+        {{t}}&nbsp;
+    {{/each}}
+</div>
