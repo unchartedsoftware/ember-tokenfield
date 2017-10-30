@@ -1,9 +1,11 @@
 import Ember from 'ember';
+import layout from '../templates/components/base-token';
 
 export default Ember.Component.extend({
     //Component properties
-    classNames: ['token'],
-    classNameBindings: ['isSelected:selected-token'],
+    layout, // For more info: https://discuss.emberjs.com/t/layout-property-for-declaring-html-in-component/12844/2
+    classNames: ['uncharted-token'],
+    classNameBindings: ['isSelected:uncharted-selected-token'],
 
     // Properties
     token: null,

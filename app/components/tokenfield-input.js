@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import layout from '../templates/components/tokenfield-input';
 
 export const KEYCODE = {
     ENTER: 13,
@@ -14,8 +15,9 @@ export const KEYCODE = {
 
 export default Ember.Component.extend({
     // Component properties
-    classNames: ['tokenfield-input'],
-    classNameBindings: ['isFocused:focus', 'disabled'],
+    layout,
+    classNames: ['uncharted-tokenfield-input'],
+    classNameBindings: ['isFocused:uncharted-focus', 'disabled'],
     attributeBindings: ['tabindex'],
     tabindex: 0,
 
@@ -39,7 +41,7 @@ export default Ember.Component.extend({
 
     // Lifecycle
     init() {
-        this._super();
+        this._super(...arguments);
         if (Ember.isNone(this.get('tokens'))) {
             this.set('tokens', Ember.A());
         }

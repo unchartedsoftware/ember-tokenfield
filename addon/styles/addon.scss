@@ -13,12 +13,12 @@ $error: Red;
 $warning: Orange;
 $info: Green;
 
-.tokenfield-input {
+.uncharted-tokenfield-input {
 
     position: relative;
 
-    &.focus {
-        .form-control {
+    &.uncharted-focus {
+        .uncharted-form-control {
             border-color: #66afe9;
             outline: 0;
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -30,20 +30,16 @@ $info: Green;
     }
 
     &.disabled {
-        .form-control {
+        .uncharted-form-control {
             background-color: #eeeeee;
 
             &:hover {
                 cursor: not-allowed;
             }
-
-            .token-wrapper {
-                pointer-events: none;
-            }
         }
     }
 
-    .duplicate-message {
+    .uncharted-duplicate-message {
         margin-top: $padding-base-vertical;
 
         .fa {
@@ -51,22 +47,24 @@ $info: Green;
         }
     }
 
-    .form-control {
+    .uncharted-form-control {
         padding: 0;
         height: auto !important;
         min-height: 34px;
     }
 
-    .token-container {
+    .uncharted-token-container {
         max-height: 150px;
+        min-height: 30px;
         overflow-y: auto;
         overflow-x: hidden;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         border: 1px solid #ededed;
         padding: $padding-extra-small-vertical $padding-extra-small-horizontal;
 
-        .token-input {
+        .uncharted-token-input {
             flex-grow: 1;
             flex-shrink: 1;
             margin: 0;
@@ -80,13 +78,13 @@ $info: Green;
         }
     }
 
-    .selected-token {
+    .uncharted-selected-token {
         border-color: #66afe9;
         outline: 0;
     }
 }
 
-.token {
+.uncharted-token {
     display: inline-flex;
     align-items: center;
     overflow: hidden;
@@ -97,7 +95,7 @@ $info: Green;
     padding: $padding-extra-small-vertical $padding-extra-small-horizontal;
     margin: $padding-extra-small-vertical $padding-extra-small-horizontal;
 
-    .token-label {
+    .uncharted-token-label {
         flex-grow: 1;
         flex-shrink: 1;
         min-width: 0;
@@ -107,14 +105,14 @@ $info: Green;
         padding-right: $padding-base-horizontal;
     }
 
-    .token-actions {
+    .uncharted-token-actions {
         display: inline;
         cursor: pointer;
         font-size: 12px;
         height: 20px;
         line-height: 20px;
 
-        .remove-action {
+        .uncharted-remove-action {
             color: darkgray;
             &:hover {
                 color: darken(darkgray, 25);
