@@ -2,8 +2,7 @@ module.exports = {
     name: 'ember-tokenfield',
 
     isDevelopingAddon: function() {
-        // TODO: Make false when released.
-        return true;
+        return false;
     },
 
     normalizeEntityName: function() {},

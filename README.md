@@ -14,16 +14,16 @@ This ember-cli addon provides a UI component called `{{tokenfield-input}}` that 
 
 ## Installation
 
-While this remains a private repo)
-
-* Add to the devDependencies in package.json:
- * ```"ember-tokenfield": "git+ssh://git@github.com/unchartedsoftware/ember-tokenfield.git#0.0.2"```
-* `yarn install`
-* `ember generate ember-tokenfield`
-
-If this makes it to the public NPM repo, then simply:
+To add this addon to your ember project, just:
 
 * `ember install ember-tokenfield`
+
+Or for more manual addon development and testing scenarios:
+
+* Add to the devDependencies in package.json:
+ * ```"ember-tokenfield": "git+ssh://git@github.com/unchartedsoftware/ember-tokenfield.git#0.0.X"```
+* `yarn install`
+* `ember generate ember-tokenfield`
 
 *Know Issue*: The add-on does not install font-awesome for you. To see icons, you'll have to include it in your project manually.
 
