@@ -2,6 +2,8 @@
 
 This ember-cli addon provides a UI component called `{{tokenfield-input}}` that manages a list of user-entered keywords (a.k.a. 'tokens'.)
 
+![tokenfield-input example](tokenfield-input-screenshot.png?raw=true)
+
 ## Features
 
 * Easily delete a term by clicking the 'x' beside it.
