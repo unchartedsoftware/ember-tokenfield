@@ -23,6 +23,8 @@ If this makes it to the public NPM repo, then simply:
 
 * `ember install ember-tokenfield`
 
+*Know Issue*: The add-on does not install font-awesome for you. To see icons, you'll have to include it in your project manually.
+
 ## Usage
 
 In your templates, refer to the component as `{{tokenfield-input}}`.
