@@ -1,5 +1,5 @@
 {
-  "name": "ember-tokenfield",
+  "name": "@uncharted.software/ember-tokenfield",
   "version": "0.0.3",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
@@ -7,8 +7,9 @@
     "input",
     "tokenfield"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "author": "Uncharted Software Inc.",
+  "homepage": "https://github.com/unchartedsoftware/ember-tokenfield",
   "directories": {
     "doc": "doc",
     "test": "tests"

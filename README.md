@@ -16,12 +16,12 @@ This ember-cli addon provides a UI component called `{{tokenfield-input}}` that 
 
 To add this addon to your ember project, just:
 
-* `ember install ember-tokenfield`
+* `ember install @uncharted.software/ember-tokenfield`
 
 Or for more manual addon development and testing scenarios:
 
 * Add to the devDependencies in package.json:
- * ```"ember-tokenfield": "git+ssh://git@github.com/unchartedsoftware/ember-tokenfield.git#0.0.X"```
+ * ```"@uncharted.software/ember-tokenfield": "git+ssh://git@github.com/unchartedsoftware/ember-tokenfield.git#0.0.X"```
 * `yarn install`
 * `ember generate ember-tokenfield`
 
