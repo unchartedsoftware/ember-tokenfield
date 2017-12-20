@@ -1,6 +1,7 @@
 {
   "name": "@uncharted.software/ember-tokenfield",
   "version": "0.0.3",
+  "private": false,
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon",
@@ -17,6 +18,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/unchartedsoftware/ember-tokenfield"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "ember build",
