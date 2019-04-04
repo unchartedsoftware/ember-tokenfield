@@ -96,6 +96,11 @@ export default Ember.Component.extend({
 
         selectToken(token, index) {
             this.set('selectedTokenIndex', index);
+        },
+
+        clearDuplicateMessage(){
+            this.set('showDuplicateMessage', false);
+            this.set('inputValue','');
         }
     },
 
